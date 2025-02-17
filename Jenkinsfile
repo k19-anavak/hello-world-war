@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {             
             steps {
                 sh "rm -rf webdemohost"
-                sh "git clone https://github.com/basavarajmallad/webdemohost.git"
+                sh "git clone https://github.com/k19-anavak/hello-world-war.git"
             }
         }
            stage('build') {             
