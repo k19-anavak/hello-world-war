@@ -3,13 +3,13 @@ pipeline {
      stages {
         stage('Checkout') {             
             steps {
-                sh "rm -rf webdemohost"
+                sh "rm -rf hello-world-war"
                 sh "git clone https://github.com/k19-anavak/hello-world-war.git"
             }
         }
            stage('build') {             
             steps {
-                sh "cd webdemohost"
+                sh "cd hello-world-war"
                 sh "mvn clean package"
                   }
         }
